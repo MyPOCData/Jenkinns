@@ -13,7 +13,7 @@ pipeline {
                     //git credentialsId: 'ccde596e-c7e8-4e29-9cee-13de5553ca49', url: 'https://github.com/MyPOCData/ZAP-Proxy.git'
                     def path = sh( script: "pwd", returnStdout: true).trim()
                     echo "PATH: ${path}"
-                    def filename="${path}/api.txt"
+                    def filename="${path}/ZAP-Proxy-API-Scan/api.txt"
 		            echo "FILE: $filename"
 		            def lines = readFile file:"$filename"
 		            echo "LINES: $lines"
